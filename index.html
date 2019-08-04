@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        
+        <meta
+            name="viewpo§rt"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Clearbit.com</title>
+
+        <link rel="stylesheet" type="text/css" href="src/styles.css" />
+    </head>
+    <body>
+        <header class="header">
+            <nav class="main-nav">
+                <div class="main-nav__container">
+                    <ul>
+                        <li class="main-nav__item">
+                            <a href="index.html" class="main-nav__link"
+                                >Strona główna</a
+                            >
+                        </li>
+                        
+                        <li class="main-nav__item">
+                            <a href="o_aplikacji.html" class="main-nav__link"
+                                >O aplikacji</a
+                                                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="content">
+            <form class = 'content__box search-form__wrapper' id="js_search-form">
+                <input class='search-form__input' placeholder="np. Adidas" id="js_search-input"/>
+                <button type='button' class='search-form__button' id="js_search-btn">
+                    Szukaj
+                </button>
+    
+
+            </form>
+            <section class="content__box results__content">
+                <p class="text instruction show" id="js_instruction">
+                    Wpisz nazwę firmy (może być tylko fragment) i naciśnij Szukaj.
+                </p>
+
+                <p class = 'text error' id='js_error-msg'>
+                Nie znaleziono podanej firmy!!!
+            </p>
+                <div class="loader" id="js_loader"></div>
+
+                               
+                <div class="results__data-wrapper" id='js_results'>
+                    <div class="results__company-wrapper">
+                        
+                        <h5 class="results__header">Nazwa firmy:</h5>
+                            <span id='js_company-name'></span>
+                        
+
+                        <h5 class="results__header"><br>Domena:</h5>
+                            <span id='js_company-domain' class="domain-nav__link"></span>
+
+                        <h5 class="results__header"><br>Logo:</h3>
+                        <img src="" id="js_company-logo"/>
+
+                            <span id='js_company-logo'></span>   
+                      
+                    </div>
+                </div>
+               
+                       
+            </section>
+        </main>
+
+        <script src="src/app.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        
+    </body>
+</html>
