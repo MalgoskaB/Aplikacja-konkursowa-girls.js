@@ -25,7 +25,7 @@ body {
     background-color: #E6E6FA;
 }
 
-@media screen and (min-width: 625px) {
+@media only screen and (min-width: 625px) {
     .main-nav {
         height: 80px;
     }
